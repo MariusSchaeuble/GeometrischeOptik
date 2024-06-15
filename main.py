@@ -68,53 +68,113 @@ sigma_f1 = gauss("b*g/(b+g)")
 
 b = 10.3/100
 g = (30-16.6)/100
+sigma_b = 1/100
+sigma_g = 1/100
+
+f2 = b*g/(b+g)
+sigma_f2 = gauss("b*g/(b+g)")
 
 b = (74-30)/100
 g = (30-23.5)/100
+sigma_b = 1/100
+sigma_g = 1/100
+
+f3 = b*g/(b+g)
+sigma_f3 = gauss("b*g/(b+g)")
 
 b = (38.7-30)/100
 g = (30-11.5)/100
+sigma_b = 1/100
+sigma_g = 1/100
+
+f4 = b*g/(b+g)
+sigma_f4 = gauss("b*g/(b+g)")
 
 #system aus 60, -150 mm
 b = (47.1-30)/100
 g = (30-11.5)/100
+sigma_b = 1/100
+sigma_g = 1/100
+f1s = b*g/(b+g)
+sigma_f1s = gauss("b*g/(b+g)")
 
 b=(53.9-30)/100
 g=(30-17.8)/100
+sigma_b = 1/100
+sigma_g = 1/100
+
+f2s = b*g/(b+g)
+sigma_f2s = gauss("b*g/(b+g)")
 
 b=(42.8-30)/100
 g=(30-7.9)/100
+sigma_b = 1/100
+sigma_g = 1/100
+
+f3s = b*g/(b+g)
+sigma_f3s = gauss("b*g/(b+g)")
 
 b=(67.1-30)/100
 g=(30-19.6)/100
+sigma_b = 1/100
+sigma_g = 1/100
+
+f4s = b*g/(b+g)
+sigma_f4s = gauss("b*g/(b+g)")
 
 #3.1.2 teil: Bessel
 #abstande g+b=s
 #System aus 60mm, -150mm
 s=59/100
 e=38/100
+sigma_e = 1/100
+sigma_s = 1/100
+
+f1sb = (s**2 - e**2)/(4*s)
+sigma_f1sb = gauss("(s**2 - e**2)/(4*s)")
 
 s=52.1/100
 e=30.7/100
 
+f2sb = (s**2 - e**2)/(4*s)
+sigma_f2sb = gauss("(s**2 - e**2)/(4*s)")
+
 s=39/100
 e=14.5/100
 
+f3sb = (s**2 - e**2)/(4*s)
+sigma_f3sb = gauss("(s**2 - e**2)/(4*s)")
+
 s=68.9/100
 e=(76.6-27.4)/100
+
+f4sb = (s**2 - e**2)/(4*s)
+sigma_f4sb = gauss("(s**2 - e**2)/(4*s)")
 
 #sammellinse, 100mm
 s=(68.9)/100
 e=(73.1-27.4)/100
 
+f1b = (s**2 - e**2)/(4*s)
+sigma_f1b = gauss("(s**2 - e**2)/(4*s)")
+
 s=(60)/100
 e=(63.5-28)/100
+
+f2b = (s**2 - e**2)/(4*s)
+sigma_f2b = gauss("(s**2 - e**2)/(4*s)")
 
 s=(51.7)/100
 e=(54.1-28.7)/100
 
+f3b = (s**2 - e**2)/(4*s)
+sigma_f3b = gauss("(s**2 - e**2)/(4*s)")
+
 s=(41.7)/100
 e=(42-31.3)/100
+
+f4b = (s**2 - e**2)/(4*s)
+sigma_f4b = gauss("(s**2 - e**2)/(4*s)")
 
 #3.1.3 teil: Autokollimation (systematischer fehler: lochblende um 1cm verschoben zur messapperatur, daher(x+1))
 f_100 = (23.9-(12.9+1))/100
