@@ -194,3 +194,22 @@ f_sys = (23.3-(12.8+1))/100
 #objektiv: 40mm
 #okular: 20mm
 #Abstand der Linsen: 22.8cm
+s0 = 250
+f2 = 20
+sigma_f2 = 2
+sigma_s0 = 25
+f1 = 40
+sigma_f1 = 4
+
+V1 = 2.2*s0/f2
+sigma_V1 = gauss("2.2*s0/f2")
+
+l = 228
+sigma_l = 10
+
+V2 = s0*(l-f2)/(f1*f2)
+sigma_V2 = gauss("s0*(l-f2)/(f1*f2)")
+
+V3 = s0*l/(f1*f2)
+sigma_V3 = gauss("s0*(l)/(f1*f2)")
+
