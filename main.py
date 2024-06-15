@@ -59,7 +59,12 @@ def gauss(term):
 
 #sammellinse, 60mm
 b = 15.4/100
+sigma_b = 1/100
 g = 10.5/100
+sigma_g = 1/100
+
+f1 = b*g/(b+g)
+sigma_f1 = gauss("b*g/(b+g)")
 
 b = 10.3/100
 g = (30-16.6)/100
