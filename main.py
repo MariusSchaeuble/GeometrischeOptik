@@ -189,6 +189,14 @@ f_sys = (23.3-(12.8+1))/100
 #3.3
 #f_objektiv= 100mm, f_okular=1.5mm
 
+f1 = 100/1000
+sigma_f1 = 0.1*f1
+f2 = 15/1000
+sigma_f2 = 0.1*f2
+Vk = f1/f2
+sigma_Vk = gauss("f1/f2")
+
+
 #3.4
 #zwischenbild mit skala vergleich: 2.2 fache vergrößerung
 #objektiv: 40mm
